@@ -1,10 +1,18 @@
-# Emmer
+# Emmer TFTP Server
 
 A framework for dynamic tftp servers. Serve data through tftp
 independently from your file system, based on client IP, Port, request
 filename, or even on some other form of server stored state.
 
 The interface is inspired by the Flask framework.
+
+Emmer is a work in progress and is very basic right now. Bug reports and
+contribution are welcome!.
+
+# Author
+
+Emmer is built by David Mah, a former intern on the Site Reliability
+Team at Dropbox. You can contact mahhaha at gmail about this.
 
 # Diving In
 
@@ -87,7 +95,7 @@ Features:
   * Hook at the beginning of the put operation. Allow for accept/deny
     before the transfer even occurs.
   * Upload reject at the end of the upload if the user returns False.
-* options support
+* Options support
   * block sizes other than 512
   * timeout
 * octet and binary support
